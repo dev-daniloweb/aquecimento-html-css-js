@@ -41,7 +41,9 @@
             }
 
             function removeTable(r) {
-                document.getElementById(r).style.display = 'none';
+                if(confirm('Tem certeza que deseja remover esse Cliente?')){
+                    document.getElementById(r).style.display = 'none';
+                }
             }
         </script>
     </body>
