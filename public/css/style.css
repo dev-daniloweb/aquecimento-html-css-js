@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.card-header {
+    background-color: rgb(19, 18, 18);
+    color: white;
+}
+
+.card-header h2{
+    padding: 8px;
+    margin-left: 15px;
+}
+
+.card-body {
+    background-color: rgb(102, 100, 100);
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.header { 
+    grid-area: header;
+    background-color: rgb(102, 100, 100);
+    padding: 20px;
+    height: 120px;
+}
+.nav { 
+    grid-area: nav;
+    background-color: rgb(19, 18, 18);
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.section { 
+    grid-area: section;
+    margin-top: 25px;
+    width: 90%;
+}
+
+.article { grid-area: article; }
+.aside { grid-area: aside; }
+.footer { grid-area: footer; }
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'section section section aside aside aside'
+        'article article article aside aside aside'
+        'footer footer footer footer footer footer';
+}
