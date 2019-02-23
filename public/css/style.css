@@ -1,6 +1,10 @@
-body {
+body, p {
     margin: 0;
     padding: 0;
+}
+
+a {
+    color: white;
 }
 
 .m-0 {
@@ -24,6 +28,39 @@ body {
 
 .btn {
     margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #383435; 
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.btn:hover span {
+    padding-right: 25px;
+}
+  
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 input[type=text] {
