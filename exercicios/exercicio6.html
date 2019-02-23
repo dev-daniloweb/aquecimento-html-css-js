@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exercícios 6</title>
+
+        <link rel="stylesheet" href="../public/css/exercicios-style.css">
+    </head>
+    <body style="text-align: center">
+        <h1>Exercício 6</h1>
+            
+        <div class="panel">
+            <label for="name">Informe o nome do Cliente:</label>
+            <input type="text" name="name" id="name">
+            <button type="button" onclick="addTable(document.getElementById('name').value)">Cadastrar</button>
+            <br>
+            <table id="resposta">
+                <tr>
+                    <th>Nome</th>
+                    <th></th> 
+                </tr>
+                               
+            </table>
+        </div>
+
+        <a href="exercicio5.html"><< Anterior</a>
+        <a class="d">Próximo >></a>
+        <br>
+
+        <script> 
+            var i = 0;
+            function addTable(name) {
+                if(name != ""){
+                    document.getElementById('resposta').innerHTML += '<tr id="'+i+'"><td>' + name + '</td><td id="remove" onclick="removeTable('+i+')">Remover</td></tr> ';
+                    i++;
+                } else {
+                    alert('Informe o nome do cliente para cadastra-lo!')
+                }
+            }
+
+            function removeTable(r) {
+                document.getElementById(r).style.display = 'none';
+            }
+        </script>
+    </body>
+</html>

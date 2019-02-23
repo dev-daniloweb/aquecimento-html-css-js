@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exercícios 3</title>
+
+        <link rel="stylesheet" href="../public/css/exercicios-style.css">
+    </head>
+    <body style="text-align: center">
+        <h1>Exercício 3</h1>
+    
+        <div class="panel">
+            <input type="text" name="input" id="input">
+            <button type="button" onclick="showList(document.getElementById('input'))">Listar</button>
+            <br>
+            <ul id="resposta" style="width: 10px"> 
+
+            </ul>
+        </div>
+
+        <a href="exercicio2.html"><< Anterior</a>
+        <a href="exercicio4.html">Próximo >></a>
+        <br>
+
+        <script>
+            function showList(num) {
+
+                for (let i = 0; i < 50; i++) {
+                    document.getElementById('resposta').innerHTML += '<li>' + (num.value++) + '</li>';
+                }
+
+                num.value = '';
+            }
+        </script>
+    </body>
+</html>

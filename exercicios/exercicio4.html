@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exercícios 4</title>
+
+        <link rel="stylesheet" href="../public/css/exercicios-style.css">
+    </head>
+    <body style="text-align: center">
+        <h1>Exercício 4</h1>
+    
+        <div class="panel">
+            <center>
+                <div style="width: 200px;height: 200px;border: 1px solid #000;background-color: #000" id="resposta">
+                
+                </div>
+            </center>
+            <br>
+            <label for="color">Escolha uma Cor:</label>
+            <br>
+            <input type="color" name="color" id="color" oninput="updateColor(this.value)">
+            <br>                       
+        </div>
+        
+        <a href="exercicio3.html"><< Anterior</a>
+        <a href="exercicio5.html">Próximo >></a>
+
+        <script>
+            function updateColor(color) {
+                document.getElementById('resposta').style.backgroundColor = color;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exercícios 2</title>
+
+        <link rel="stylesheet" href="../public/css/exercicios-style.css">
+    </head>
+    <body style="text-align: center">
+        <h1>Exercício 2</h1>
+        
+        <div class="panel">            
+            <button type="button" class="" onclick="showPrompt()">Abrir Prompt</button>
+            <br>
+            <p id="resposta"> </p>
+        </div>
+
+        <a href="exercicio1.html"><< Anterior</a>
+        <a href="exercicio3.html">Próximo >></a>
+
+        <script>
+            function showPrompt() {
+                var resposta = prompt('Digite seu Nome:');
+                document.getElementById('resposta').innerHTML = 'Olá ' + resposta + '!';
+            }
+        </script>
+    </body>
+</html>

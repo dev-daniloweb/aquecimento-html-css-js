@@ -1,0 +1,93 @@
+.panel {
+    border: 1px solid rgb(153, 144, 144);
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px;
+}
+
+input[type=text] {
+    padding: 10px 14px;
+    width: 100%;
+    font-size: 16px;
+    display: inline-block;
+    border: 1px solid rgb(153, 144, 144);
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+input[type=number] {
+    padding: 10px 14px;
+    width: 20%;
+    font-size: 16px;
+    display: inline-block;
+    border: 1px solid rgb(153, 144, 144);
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	width: 50px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 0;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 0;
+    width: 52px;
+    height: 30px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    background-color: #383435; 
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+a {
+    background-color: #383435; 
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+}
+.d {
+    background-color: rgb(170, 164, 164); 
+    cursor: not-allowed;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#remove {
+    text-decoration: underline;
+    color: red;
+    width: 15%;
+    cursor: pointer;
+}

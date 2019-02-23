@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exercícios 5</title>
+
+        <link rel="stylesheet" href="../public/css/exercicios-style.css">
+    </head>
+    <body style="text-align: center">
+        <h1>Exercício 5</h1>
+    
+        <div class="panel">
+            <label for="number">Informe o Némuro de Linhas:</label>
+            <input type="number" name="number" id="number" value="0">
+            <button type="button" onclick="addTable(document.getElementById('number').value)">Adicionar na Tabela</button>
+            <br>
+            <table id="resposta">
+                <tr>
+                    <th>Código</th>
+                    <th>Produto</th> 
+                    <th>Qtd.</th>
+                </tr>
+                <tr>
+                    <td>Cd. do produto</td>
+                    <td>Nome do Produto</td> 
+                    <td>Qtd. do produto</td>
+                </tr>                
+            </table>
+        </div>
+
+        <a href="exercicio4.html"><< Anterior</a>
+        <a href="exercicio6.html">Próximo >></a>
+
+        <script>
+            function addTable(num) {
+                if (num == 0 || num == "") {
+                    alert('Informe o número de linhas para adicionar na tabela!');
+                } else if (num < 0) {
+                    alert('Informe um número valido (posistivo)!');
+                } else {
+                    for(let i = 0; i < num; i++){
+                        document.getElementById('resposta').innerHTML += '<tr><td>Cd. do produto</td><td>Nome do Produto</td><td>Qtd. do produto</td></tr> ';
+                    }   
+                }
+            }
+        </script>
+    </body>
+</html>
