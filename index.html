@@ -23,36 +23,40 @@
             </header>
 
             <!-- Barra de Navegação -->
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <!--  -->
-                <a href="#" class="nav-item" id="home">Home</a>
-                <span class="nav-item">|</span>
+                <a href="#" id="home">Home</a>
+                
                 <!--  -->
-                <a href="#" class="nav-item" id="marketing">Marketing</a>
-                <span class="nav-item">|</span>
+                <a href="#" id="marketing">Marketing</a>
+                
                 <!--  -->
-                <a href="#" class="nav-item" id="internet">Internet</a>
-                <span class="nav-item">|</span>
+                <a href="#" id="internet">Internet</a>
+                
                 <!--  -->
-                <a href="#" class="nav-item" id="ganhar_dinheiro">Ganhar Dinheiro</a>
-                <span class="nav-item">|</span>
+                <a href="#" id="ganhar_dinheiro">Ganhar Dinheiro</a>
+                
                 <!--  -->
-                <a href="#" class="nav-item" id="Webmaster">Webmaster</a>
-                <span class="nav-item">|</span>
+                <a href="#" id="Webmaster">Webmaster</a>
+                
                 <!--  -->
-                <a href="#" class="nav-item" id="scripts">Scripts</a>
-                <span class="nav-item">|</span>
+                <a href="#" id="scripts">Scripts</a>
+                
                 <!--  -->
-                <a href="#" class="nav-item" id="softwere">Software</a>
-                <span class="nav-item">|</span>
+                <a href="#" id="softwere">Software</a>
+                
                 <!--  -->
-                <a href="#" class="nav-item" id="comercio_eletronico">Comécio Eletrônico</a>
-                <span class="nav-item">|</span>
+                <a href="#" id="comercio_eletronico">Comécio Eletrônico</a>
+                
                 <!--  -->
-                <a href="#" class="nav-item" id="downloads">Downloads</a>
-                <span class="nav-item">|</span>
+                <a href="#" id="downloads">Downloads</a>
+                
                 <!--  -->
-                <a href="#" class="nav-item" id="contato">Contato</a>
+                <a href="#" id="contato">Contato</a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <label>&#9776;</label>
+                </a>
             </nav>
 
             <!-- Sessão do Site -->
@@ -114,7 +118,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="" style="margin-left: 25px">
+                    <br class="br">
+                    <div class="ml">
                         <div class="card-header">
                             <h2 class="m-0">WEBDESIGN</h2>
                         </div>
@@ -143,7 +148,7 @@
             </article> 
 
             <!-- Menu Lateral do Site -->
-            <aside class="aside">
+            <aside class="aside ml">
                 <form action=".">
                     <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar...">
                 </form> 
@@ -166,19 +171,21 @@
                 </div>
 
                 <div class="row" style="padding-top: 50px">
-                    <div class="card-body" style="background-color: white;margin-right: 5px;padding: 80px">
+                    <div class="card-body" style="background-color: white;padding: 80px">
                         
                     </div>
-                    <div class="card-body" style="background-color: white;margin-left: 5px;padding: 80px">
+                    <br class="br">
+                    <div class="card-body ml" style="background-color: white;padding: 80px">
 
                     </div>
                 </div>
                 <br>
                 <div class="row">
-                    <div class="card-body" style="background-color: white;margin-right: 5px;padding: 80px">
+                    <div class="card-body" style="background-color: white;padding: 80px">
                         
                     </div>
-                    <div class="card-body" style="background-color: white;margin-left: 5px;padding: 80px">
+                    <br class="br">
+                    <div class="card-body ml" style="background-color: white;padding: 80px">
 
                     </div>
                 </div>
@@ -186,6 +193,17 @@
 
             <!-- Rodapé do Site -->
             <footer class="footer">Webmaster.pt</footer>
+
+            <script>
+                    function myFunction() {
+                      var x = document.getElementById("nav");
+                      if (x.className === "nav") {
+                        x.className += " responsive";
+                      } else {
+                        x.className = "nav";
+                      }
+                    }
+                    </script>
         </div>         
     </body>
 </html>
