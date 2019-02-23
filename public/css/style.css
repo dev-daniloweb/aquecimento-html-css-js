@@ -8,11 +8,11 @@ body {
 }
 
 .card-header {
-    background-color: rgb(19, 18, 18);
+    background-color: #383435;
     color: white;
 }
 
-.card-header h2{
+.card-header h2, .card-header h3{
     padding: 8px;
     margin-left: 15px;
 }
@@ -22,21 +22,35 @@ body {
     grid-template-columns: auto auto;
 }
 
+.btn {
+    margin-bottom: 20px;
+}
+
+input[type=text] {
+    padding: 10px 14px;
+    width: 100%;
+    font-size: 16px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+  }
+
 .card-body {
-    background-color: rgb(102, 100, 100);
+    background-color: #6a6a6a;
     color: white;
     padding: 20px;
 }
 
 .header { 
     grid-area: header;
-    background-color: rgb(102, 100, 100);
     padding: 20px;
-    height: 150px;
+    height: 200px;
 }
 .nav { 
     grid-area: nav;
-    background-color: rgb(19, 18, 18);
+    background-color: #383435;
     padding: 10px;
     text-align: center;
 }
@@ -61,11 +75,19 @@ body {
 
 .aside { 
     grid-area: aside;
-    background-color: rgb(102, 100, 100);
+    background-color: #6a6a6a;
     margin-top: 25px;
     margin-left: 25px;
+    padding: 20px;
 }
-.footer { grid-area: footer; }
+.footer { 
+    grid-area: footer;
+    padding: 10px;
+    padding-left: 20px;
+    background-color: #6a6a6a;
+    margin-top: 25px;
+    color: white;
+}
 
 
 .grid-container {
@@ -73,7 +95,7 @@ body {
     grid-template-areas:
         'header header header header header header'
         'nav nav nav nav nav nav'
-        'section section section aside aside aside'
-        'article article article aside aside aside'
+        'section section section section aside aside'
+        'article article article article aside aside'
         'footer footer footer footer footer footer';
 }
